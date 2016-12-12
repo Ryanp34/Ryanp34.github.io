@@ -1,202 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<header class="main_header">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <link href="css/custom.css" rel="stylesheet">
+ <link href="css/hover.css" rel="stylesheet">
+ <link href="css/textAni.css" rel="stylesheet">
+    <div class="row">
+     <div class="content"> 
+        <a class="logo" href="index.html">SW</a>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Ryan's Portfolio</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    Home
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <!-- /.container -->
-    </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">My Portfolio
-                        </h1>
-                        <p class="intro-text">Designer From Thunder Bay</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+        <nav>
+            <ul>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Me</h2>
-                <p>My name is Ryan Pearson, I am 21 years old and currently in my final year of Interactive Media Development at Confederation College in Thunder Bay, Ontario.</p>
-                
-            </div>
-        </div>
-    </section>
+                <li><a href="#sec01">Countdown</a></li>
+                <li><a href="#sec02">About</a></li>
+              
+                <li><a href="characters.html">Characters</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div> <!-- END row -->
 
-    <!-- Download Section -->
-       <section id="work" class="container content-section text-center">
-        <div class="row">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Photography and Editing</h2>
-                    <img src="img/pearson_shiny.jpg" alt="shiny" style="width:1000px;height:350px;">
-                    <p>Before and After editing </p>
+</header>
+<body onload="script();">
 
-                    <br>
-                    <img src="img/fog.jpg" alt="shiny" style="width:1000px;height:500px;">
-                    <p>Fog Over a River.</p>
-                
-                   <br>
-                    <img src="img/rocks.jpg" alt="shiny" style="width:1000px;height:500px;">
-                        <p>Close of Photos of Rocks underneath a drainage pipe.</p>
-                
-                        <br>
-                  <img src="img/waterdrops.jpg" alt="shiny" style="width:1000px;height:500px;">
-                        <p>Close of Photos of Rocks underneath a drainage pipe.</p>
-                
+</div>
+  <script src="js/custom.js"></script>
+<div class="sections">
+  
+ <section id="hero">
+<div id="test">
+    <h1 class="font" id ="font">Star Wars<br>VIII</h1>
+    <h3 class="font" id = "font">The Saga Continues...</h3>
+ </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
+  </section><!-- END hero -->
+
+  <section class="row dark" id="sec01">
+    <div class="content">
+       <h1 class="cd"> Movie Releases in...</h1>
+    <h1 class="cd" id="countdown"></h1>
+
+        <video width="480" height="800" autoplay>
+  <source src="img/Poster.mp4" type="video/mp4">
+
+</video>
+
+    </div>
+  </section><!-- END row -->
+
+  <section class="row" id="sec02">
+    <div class="content">
+      <h1>The Plot of Episode VIII</h1>
+
+      
+      <p>Having taken her first steps into a larger world in Star Wars: The Force Awakens (2015), Rey continues her epic journey with Finn, Poe and Luke Skywalker in the next chapter of the saga.</p>
 
 
 
-     <section id="work2" class="container content-section text-center">
-        <div class="row">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Graphic Design</h2>
-                    <img src="img/albumcover.png" alt="shiny"  >
-                    <p>A Custom album cover. I wanted it to look like spray paint on a concrete wall. </p>
 
-                    <br>
-                    <img src="img/coverpage.jpg" alt="shiny" >
-                    <p>Cover page from the Client Project E-Book.</p>
-            
-                 
-                        <br>
-                  <img src="img/persona.jpg" alt="shiny" style="width:600px;height:1500x;" >
-                        <p>One of the persona's from the client project e-book.</p>
-                
 
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Me</h2>
-                <p>Feel free to email me any business offers.</p>
-                <p><a href="mailto:ryanp3050@gmail.com">ryanp3050@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ryan-pearson-90a3b4119?trk=hp-identity-name" class="btn btn-default btn-lg"><span class="network-name">LinkedIn</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <!-- Map Section -->
-    
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
-        </div>
-    </footer>
+      <p> Website and artwork for educational purposes only.</p>
+    </div>
+  </section><!-- END row -->
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
-
+  
+  
+  <!-- Scroll-to-Top -->
+  <a href="#" class="scrollup"><i class="fa fa-arrow-circle-o-up"></i></a>
+  
+</div><!-- END sections -->
+<script src="js/custom.js"></script>
+ <script src="js/countdown.js"></script>
+ <script src="js/text.js"></script>
+ <script src="js/textEffect.js"></script>
 </body>
-
 </html>
